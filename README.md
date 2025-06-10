@@ -1,5 +1,24 @@
 # Arquitectura de Software 🏗️
 
+> Este repositorio tiene fines educativos para aprender sobre Arquitectura y Desarrollo de Software. ¡Toda contribución y ayuda es bienvenida! Si deseas colaborar, no dudes en hacer un pull request o abrir un issue.
+
+## Índice 📑
+
+1. [¿Qué es la arquitectura de software?](#1-qué-es-la-arquitectura-de-software-)
+   - [Visión de alto nivel](#visión-de-alto-nivel)
+   - [Gestión de la complejidad](#gestión-de-la-complejidad)
+   - [Decisiones estratégicas](#decisiones-estratégicas)
+2. [¿Qué es el Desarrollo de software?](#2-qué-es-el-desarrollo-de-software-)
+   - [Visión detallada](#visión-detallada)
+   - [Plan de implementación](#plan-de-implementación)
+   - [Enfoque práctico](#enfoque-práctico)
+3. [Arquitectura vs Desarrollo: Diferencias Clave](#3-arquitectura-vs-desarrollo-diferencias-clave-)
+4. [Roles y Responsabilidades](#4-roles-y-responsabilidades-)
+   - [Arquitecto de Software](#arquitecto-de-software)
+   - [Desarrollador de Software](#desarrollador-de-software)
+
+---
+
 ## 1. ¿Qué es la arquitectura de software? 🎓
 
 La arquitectura de software se puede entender desde tres perspectivas fundamentales:
@@ -78,3 +97,5 @@ La arquitectura establece la estructura general y las decisiones de Desarrollo d
 - Desarrolla pruebas unitarias
 - Aplica patrones de Desarrollo (creacional, estructural, comportamental)
 - Se enfoca en la calidad del código
+
+![Arquitectura vs Desarrollo de Software](@Arquitectura de software1.png)
