@@ -25,7 +25,7 @@ Determina aspectos cruciales como:
 - Patrones arquitectónicos a evitar
 - Decisiones tempranas de alto impacto
 
-## 2. ¿Qué es el diseño de software? 🛠️
+## 2. ¿Qué es el Desarrollo de software? 🛠️
 
 ### Visión detallada
 Define la implementación específica de cada módulo o componente:
@@ -33,7 +33,7 @@ Define la implementación específica de cada módulo o componente:
 - Estructuras de datos
 - Algoritmos
 - APIs
-- Patrones de diseño a nivel local
+- Patrones de Desarrollo a nivel local
 
 ### Plan de implementación
 - Guía a los desarrolladores
@@ -47,9 +47,9 @@ Se centra en aspectos como:
 - Claridad
 - Facilidad de mantenimiento
 
-## 3. Arquitectura vs Diseño: Diferencias Clave 📊
+## 3. Arquitectura vs Desarrollo: Diferencias Clave 📊
 
-| Aspecto              | Arquitectura                                        | Diseño 
+| Aspecto              | Arquitectura                                        | Desarrollo 
 |----------------------|-----------------------------------------------------|--------------------------------------------------
 | Nivel de abstracción | Alto – esqueleto/fundación del sistema              | Detallado – módulos individuales 
 | Pregunta clave       | ¿Qué se construye y dónde?                          | ¿Cómo se construye? 
@@ -58,7 +58,7 @@ Se centra en aspectos como:
 | Flexibilidad         | Rígido – cambios son costosos                       | Más fácil de cambiar y ajustar 
 | Ejemplos             | Microservicios, C4, MVC                             | Singleton, Strategy, Builder, etc. 
 
-La arquitectura establece la estructura general y las decisiones de diseño de sistemas completos, mientras que el diseño detalla las piezas individuales, definiendo módulos concretos y el flujo interno para materializar la visión arquitectónica.
+La arquitectura establece la estructura general y las decisiones de Desarrollo de sistemas completos, mientras que el Desarrollo detalla las piezas individuales, definiendo módulos concretos y el flujo interno para materializar la visión arquitectónica.
 
 ## 4. Roles y Responsabilidades 👤
 
@@ -71,47 +71,10 @@ La arquitectura establece la estructura general y las decisiones de diseño de s
 - Documenta decisiones arquitectónicas
 - Lidera visiones cross-equipo (Enterprise vs Solution Architect)
 
-### Diseñador / Desarrollador de Software
+### Desarrollador de Software
 - Traduce la visión arquitectónica en componentes concretos
 - Define clases, interfaces y flujos
 - Implementa algoritmos
 - Desarrolla pruebas unitarias
-- Aplica patrones de diseño (creacional, estructural, comportamental)
+- Aplica patrones de Desarrollo (creacional, estructural, comportamental)
 - Se enfoca en la calidad del código
-
-## 5. Enfoque Pedagógico para el Aprendizaje 📚
-
-### Ejercicio Comparativo
-Toma una aplicación sencilla (por ejemplo, un sistema de blog) y:
-
-#### Para la Arquitectura:
-- Identifica componentes principales (frontend, backend, DB)
-- Define la comunicación entre componentes
-- Establece requisitos de calidad
-
-#### Para el Diseño:
-- Diagrama de clases por componente
-- Definición de funciones
-- Estructuras de datos
-- Implementación de patrones de diseño (MVC, Repository, etc.)
-
-### Roles en Práctica
-Simula un entorno de trabajo real:
-
-#### Como Arquitecto:
-- Define la estructura general
-- Crea diagramas de alto nivel (C4)
-- Establece criterios de aceptación
-
-#### Como Diseñador:
-- Implementa la solución
-- Documenta el código
-- Desarrolla pruebas
-
-### Ciclo Iterativo
-1. Documenta decisiones arquitectónicas (ej. microservicios, CQRS)
-2. Justifica las elecciones técnicas
-3. Diseña módulos localmente
-4. Desarrolla prototipos
-5. Evalúa trade-offs
-6. Documenta lecciones aprendidas 
