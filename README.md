@@ -4,52 +4,52 @@
 
 ## Índice 📑
 
-1. [Introducción a la Arquitectura de Software](#1-introducción-a-la-arquitectura-de-software)
-   - [1.1 ¿Qué es la arquitectura de software?](#11-qué-es-la-arquitectura-de-software)
-   - [1.2 ¿Qué es el Desarrollo de software?](#12-qué-es-el-desarrollo-de-software)
-   - [1.3 Arquitectura vs Desarrollo: Diferencias Clave](#13-arquitectura-vs-desarrollo-diferencias-clave)
-   - [1.4 Roles y Responsabilidades](#14-roles-y-responsabilidades)
+- [Introducción a la Arquitectura de Software](#introducción-a-la-arquitectura-de-software)
+  - [¿Qué es la arquitectura de software?](#qué-es-la-arquitectura-de-software)
+  - [¿Qué es el Desarrollo de software?](#qué-es-el-desarrollo-de-software)
+  - [Arquitectura vs Desarrollo: Diferencias Clave](#arquitectura-vs-desarrollo-diferencias-clave)
+  - [Roles y Responsabilidades](#roles-y-responsabilidades)
 
-2. [Principios SOLID](#2-principios-solid)
-   - [2.1 Principio de Responsabilidad Única (SRP)](#21-principio-de-responsabilidad-única-srp)
-   - [2.2 Principio Abierto-Cerrado (OCP)](#22-principio-abierto-cerrado-ocp)
-   - [2.3 Principio de Sustitución de Liskov (LSP)](#23-principio-de-sustitución-de-liskov-lsp)
-   - [2.4 Principio de Segregación de Interfaces (ISP)](#24-principio-de-segregación-de-interfaces-isp)
-   - [2.5 Principio de Inversión de Dependencias (DIP)](#25-principio-de-inversión-de-dependencias-dip)
-   - [2.6 Resumen de SOLID](#26-resumen-de-solid)
+- [Principios SOLID](#principios-solid)
+  - [Principio de Responsabilidad Única (SRP)](#principio-de-responsabilidad-única-srp)
+  - [Principio Abierto-Cerrado (OCP)](#principio-abierto-cerrado-ocp)
+  - [Principio de Sustitución de Liskov (LSP)](#principio-de-sustitución-de-liskov-lsp)
+  - [Principio de Segregación de Interfaces (ISP)](#principio-de-segregación-de-interfaces-isp)
+  - [Principio de Inversión de Dependencias (DIP)](#principio-de-inversión-de-dependencias-dip)
+  - [Resumen de SOLID](#resumen-de-solid)
 
 ---
 
-# 1 Introducción a la Arquitectura de Software
+## Introducción a la Arquitectura de Software
 
-## 1.1 ¿Qué es la arquitectura de software? 🎓
+### ¿Qué es la arquitectura de software? 🎓
 
 La arquitectura de software se puede entender desde tres perspectivas fundamentales:
 
-### Visión de alto nivel
+#### Visión de alto nivel
 Es el "esqueleto" o blueprint de un sistema. Define:
 - Los componentes principales
 - Sus relaciones e interfaces
 - Los entornos de ejecución
 - Cómo estos elementos se integran para satisfacer tanto requisitos funcionales como no funcionales (rendimiento, disponibilidad, seguridad)
 
-### Gestión de la complejidad
+#### Gestión de la complejidad
 Proporciona una abstracción para organizar sistemas de gran escala, equilibrando factores críticos como:
 - Tiempos de respuesta
 - Tolerancia a fallos
 - Escalabilidad
 - Costos operativos
 
-### Decisiones estratégicas
+#### Decisiones estratégicas
 Determina aspectos cruciales como:
 - Selección de tecnologías
 - Estrategias de escalamiento
 - Patrones arquitectónicos a evitar
 - Decisiones tempranas de alto impacto
 
-## 1.2 ¿Qué es el Desarrollo de software? 🛠️
+### ¿Qué es el Desarrollo de software? 🛠️
 
-### Visión detallada
+#### Visión detallada
 Define la implementación específica de cada módulo o componente:
 - Clases y funciones
 - Estructuras de datos
@@ -57,19 +57,19 @@ Define la implementación específica de cada módulo o componente:
 - APIs
 - Patrones de Desarrollo a nivel local
 
-### Plan de implementación
+#### Plan de implementación
 - Guía a los desarrolladores
 - Describe interfaces y relaciones
 - Define métodos para cumplir requisitos funcionales
 
-### Enfoque práctico
+#### Enfoque práctico
 Se centra en aspectos como:
 - Corrección del código
 - Eficiencia
 - Claridad
 - Facilidad de mantenimiento
 
-## 1.3 Arquitectura vs Desarrollo: Diferencias Clave 📊
+### Arquitectura vs Desarrollo: Diferencias Clave 📊
 
 | Aspecto              | Arquitectura                                        | Desarrollo 
 |----------------------|-----------------------------------------------------|--------------------------------------------------
@@ -82,9 +82,9 @@ Se centra en aspectos como:
 
 La arquitectura establece la estructura general y las decisiones de Desarrollo de sistemas completos, mientras que el Desarrollo detalla las piezas individuales, definiendo módulos concretos y el flujo interno para materializar la visión arquitectónica.
 
-## 1.4 Roles y Responsabilidades 👤
+### Roles y Responsabilidades 👤
 
-### Arquitecto de Software
+#### Arquitecto de Software
 - Define la estructura general del sistema
 - Selecciona tecnologías y patrones
 - Alinea la arquitectura con objetivos de negocio
@@ -93,7 +93,7 @@ La arquitectura establece la estructura general y las decisiones de Desarrollo d
 - Documenta decisiones arquitectónicas
 - Lidera visiones cross-equipo (Enterprise vs Solution Architect)
 
-### Desarrollador de Software
+#### Desarrollador de Software
 - Traduce la visión arquitectónica en componentes concretos
 - Define clases, interfaces y flujos
 - Implementa algoritmos
@@ -103,9 +103,9 @@ La arquitectura establece la estructura general y las decisiones de Desarrollo d
 
 ![Arquitectura vs Desarrollo de Software](Assets/ArquitecturaDeSoftware1.png)
 
-# 2 Principios SOLID 🔧
+## Principios SOLID 🔧
 
-## 2.1 Principio de Responsabilidad Única (SRP) 🧩
+### Principio de Responsabilidad Única (SRP) 🧩
 
 **Definición**: Cada módulo o clase debe tener una única razón para cambiar.
 
@@ -150,7 +150,7 @@ class Compressor:
     def decompress(self, filename): pass
 ```
 
-## 2.2 Principio Abierto-Cerrado (OCP) 🔓
+### Principio Abierto-Cerrado (OCP) 🔓
 
 **Definición**: Los módulos deben estar abiertos a extensión, pero cerrados a modificación.
 
@@ -186,7 +186,7 @@ class XMLFormatter:
 # Extender: sólo creas nueva clase Formatter, no modifies Report
 ```
 
-## 2.3 Principio de Sustitución de Liskov (LSP) 🔄
+## Principio de Sustitución de Liskov (LSP) 🔄
 
 **Definición**: Los objetos de una clase derivada deben poder sustituir a la clase base sin cambiar el comportamiento.
 
@@ -217,7 +217,7 @@ class Sparrow(FlyingBird): pass
 class Penguin(Bird): pass
 ```
 
-## 2.4 Principio de Segregación de Interfaces (ISP) 📋
+## Principio de Segregación de Interfaces (ISP) 📋
 
 **Definición**: Los clientes no deben depender de interfaces que no usan.
 
@@ -250,7 +250,7 @@ class Robot(Workable):
     def work(self): pass
 ```
 
-## 2.5 Principio de Inversión de Dependencias (DIP) 🔄
+## Principio de Inversión de Dependencias (DIP) 🔄
 
 **Definición**: Los módulos de alto nivel no deben depender de los de bajo nivel, ambos deben depender de abstracciones.
 
@@ -290,7 +290,7 @@ class UserRepository:
         # ...
 ```
 
-## 2.6 Resumen de SOLID
+## Resumen de SOLID
 
 | Principio | Qué logra | Ejercicio práctico |
 |-----------|-----------|-------------------|
