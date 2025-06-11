@@ -5,17 +5,10 @@
 ## Índice 📑
 
 1. [¿Qué es la arquitectura de software?](#1-qué-es-la-arquitectura-de-software-)
-   - [Visión de alto nivel](#visión-de-alto-nivel)
-   - [Gestión de la complejidad](#gestión-de-la-complejidad)
-   - [Decisiones estratégicas](#decisiones-estratégicas)
 2. [¿Qué es el Desarrollo de software?](#2-qué-es-el-desarrollo-de-software-)
-   - [Visión detallada](#visión-detallada)
-   - [Plan de implementación](#plan-de-implementación)
-   - [Enfoque práctico](#enfoque-práctico)
 3. [Arquitectura vs Desarrollo: Diferencias Clave](#3-arquitectura-vs-desarrollo-diferencias-clave-)
 4. [Roles y Responsabilidades](#4-roles-y-responsabilidades-)
-   - [Arquitecto de Software](#arquitecto-de-software)
-   - [Desarrollador de Software](#desarrollador-de-software)
+
 
 ---
 
@@ -98,4 +91,4 @@ La arquitectura establece la estructura general y las decisiones de Desarrollo d
 - Aplica patrones de Desarrollo (creacional, estructural, comportamental)
 - Se enfoca en la calidad del código
 
-![Arquitectura vs Desarrollo de Software](@Arquitectura de software1.png)
+![Arquitectura vs Desarrollo de Software](@Assets/Arquitectura de software1.png)
