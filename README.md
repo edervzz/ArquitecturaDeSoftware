@@ -4,15 +4,24 @@
 
 ## Índice 📑
 
-1. [¿Qué es la arquitectura de software?](#1-qué-es-la-arquitectura-de-software-)
-2. [¿Qué es el Desarrollo de software?](#2-qué-es-el-desarrollo-de-software-)
-3. [Arquitectura vs Desarrollo: Diferencias Clave](#3-arquitectura-vs-desarrollo-diferencias-clave-)
-4. [Roles y Responsabilidades](#4-roles-y-responsabilidades-)
+1. [Introducción a la Arquitectura de Software](#10-introduccion-a-la-arquitectura-de-software)
+   1.1 [¿Qué es la arquitectura de software?](#11-qué-es-la-arquitectura-de-software-)
+   1.2 [¿Qué es el Desarrollo de software?](#12-qué-es-el-desarrollo-de-software-)
+   1.3 [Arquitectura vs Desarrollo: Diferencias Clave](#13-arquitectura-vs-desarrollo-diferencias-clave-)
+   1.4 [Roles y Responsabilidades](#14-roles-y-responsabilidades-)
 
+2. [Principios SOLID](#20-principios-solid-)
+   2.1 [Principio de Responsabilidad Única (SRP)](#21-principio-de-responsabilidad-única-srp-)
+   2.2 [Principio Abierto-Cerrado (OCP)](#22-principio-abierto-cerrado-ocp-)
+   2.3 [Principio de Sustitución de Liskov (LSP)](#23-principio-de-sustitución-de-liskov-lsp-)
+   2.4 [Principio de Segregación de Interfaces (ISP)](#24-principio-de-segregación-de-interfaces-isp-)
+   2.5 [Principio de Inversión de Dependencias (DIP)](#25-principio-de-inversión-de-dependencias-dip-)
+   2.6 [Resumen de SOLID](#26-resumen-de-solid)
 
 ---
+# 1.0 Introduccion a la Arquitectura de Software
 
-## 1. ¿Qué es la arquitectura de software? 🎓
+## 1.1 ¿Qué es la arquitectura de software? 🎓
 
 La arquitectura de software se puede entender desde tres perspectivas fundamentales:
 
@@ -37,7 +46,7 @@ Determina aspectos cruciales como:
 - Patrones arquitectónicos a evitar
 - Decisiones tempranas de alto impacto
 
-## 2. ¿Qué es el Desarrollo de software? 🛠️
+## 1.2 ¿Qué es el Desarrollo de software? 🛠️
 
 ### Visión detallada
 Define la implementación específica de cada módulo o componente:
@@ -59,7 +68,7 @@ Se centra en aspectos como:
 - Claridad
 - Facilidad de mantenimiento
 
-## 3. Arquitectura vs Desarrollo: Diferencias Clave 📊
+## 1.3 Arquitectura vs Desarrollo: Diferencias Clave 📊
 
 | Aspecto              | Arquitectura                                        | Desarrollo 
 |----------------------|-----------------------------------------------------|--------------------------------------------------
@@ -72,7 +81,7 @@ Se centra en aspectos como:
 
 La arquitectura establece la estructura general y las decisiones de Desarrollo de sistemas completos, mientras que el Desarrollo detalla las piezas individuales, definiendo módulos concretos y el flujo interno para materializar la visión arquitectónica.
 
-## 4. Roles y Responsabilidades 👤
+## 1.4 Roles y Responsabilidades 👤
 
 ### Arquitecto de Software
 - Define la estructura general del sistema
@@ -92,3 +101,202 @@ La arquitectura establece la estructura general y las decisiones de Desarrollo d
 - Se enfoca en la calidad del código
 
 ![Arquitectura vs Desarrollo de Software](Assets/ArquitecturaDeSoftware1.png)
+
+# 2.0 Principios SOLID 🔧
+
+## 2.1 Principio de Responsabilidad Única (SRP) 🧩
+
+**Definición**: Cada módulo o clase debe tener una única razón para cambiar.
+
+La Separación de Responsabilidades (SoC) va de la mano: divide el sistema en partes con responsabilidades distintas.
+
+#### 📌 Ejemplo en Python (malo vs. bien)
+
+❌ **Violación de SRP**: mezcla lectura y compresión
+```python
+class FileManager:
+    def __init__(self, filename):
+        self.filename = filename
+
+    def read(self):
+        # lee archivo
+        pass
+
+    def write(self, data):
+        # escribe archivo
+        pass
+
+    def compress(self):
+        # comprime archivo
+        pass
+
+    def decompress(self):
+        # descomprime archivo
+        pass
+```
+
+✅ **Solución**: separa responsabilidades:
+```python
+class FileManager:
+    def __init__(self, filename):
+        self.filename = filename
+
+    def read(self): pass
+    def write(self, data): pass
+
+class Compressor:
+    def compress(self, filename): pass
+    def decompress(self, filename): pass
+```
+
+## 2.2 Principio Abierto-Cerrado (OCP) 🔓
+
+**Definición**: Los módulos deben estar abiertos a extensión, pero cerrados a modificación.
+
+#### 📌 Ejemplo en Python
+
+❌ **Violación**: cada vez que agregas un formato, modificas la clase
+```python
+class Report:
+    def output(self, format):
+        if format == "json":
+            # ...
+            pass
+        elif format == "xml":
+            # ...
+            pass
+```
+
+✅ **Solución**: usa polimorfismo / interfaces:
+```python
+class Report:
+    def __init__(self, formatter):
+        self.formatter = formatter
+
+    def output(self, data):
+        return self.formatter.format(data)
+
+class JSONFormatter:
+    def format(self, data): pass
+
+class XMLFormatter:
+    def format(self, data): pass
+
+# Extender: sólo creas nueva clase Formatter, no modifies Report
+```
+
+## 2.3 Principio de Sustitución de Liskov (LSP) 🔄
+
+**Definición**: Los objetos de una clase derivada deben poder sustituir a la clase base sin cambiar el comportamiento.
+
+#### 📌 Ejemplo en Python
+
+❌ **Violación**:
+```python
+class Bird:
+    def fly(self): pass
+
+class Sparrow(Bird):
+    def fly(self): pass  # correcto
+
+class Penguin(Bird):
+    def fly(self):
+        raise NotImplementedError
+# ❌ Violación: Penguin no puede volar, rompe el contrato de la clase base
+```
+
+✅ **Solución**: reorganiza la jerarquía:
+```python
+class Bird: pass
+
+class FlyingBird(Bird):
+    def fly(self): pass
+
+class Sparrow(FlyingBird): pass
+class Penguin(Bird): pass
+```
+
+## 2.4 Principio de Segregación de Interfaces (ISP) 📋
+
+**Definición**: Los clientes no deben depender de interfaces que no usan.
+
+#### 📌 Ejemplo en Python
+
+❌ **Violación**:
+```python
+class Worker:
+    def work(self): pass
+    def eat(self): pass
+
+class Robot(Worker):
+    def work(self): pass
+    def eat(self): raise NotImplementedError  # ❌ Violación de ISP
+```
+
+✅ **Solución**: define interfaces segmentadas:
+```python
+class Workable:
+    def work(self): pass
+
+class Eatable:
+    def eat(self): pass
+
+class Human(Workable, Eatable):
+    def work(self): pass
+    def eat(self): pass
+
+class Robot(Workable):
+    def work(self): pass
+```
+
+## 2.5 Principio de Inversión de Dependencias (DIP) 🔄
+
+**Definición**: Los módulos de alto nivel no deben depender de los de bajo nivel, ambos deben depender de abstracciones.
+
+#### 📌 Ejemplo en Python
+
+❌ **Violación**: Acoplamiento directo
+```python
+class MySQLDatabase:
+    def connect(self): pass
+
+class UserRepository:
+    def __init__(self):
+        self.db = MySQLDatabase()
+
+    def get_user(self, id):
+        self.db.connect()
+        # ...
+```
+
+✅ **Solución**: depende de una abstracción:
+```python
+from abc import ABC, abstractmethod
+
+class Database(ABC):
+    @abstractmethod
+    def connect(self): pass
+
+class MySQLDatabase(Database):
+    def connect(self): pass
+
+class UserRepository:
+    def __init__(self, db: Database):
+        self.db = db
+
+    def get_user(self, id):
+        self.db.connect()
+        # ...
+```
+
+## 2.6 Resumen de SOLID
+
+| Principio | Qué logra | Ejercicio práctico |
+|-----------|-----------|-------------------|
+| SRP | Clases con responsabilidad única | Refactorizar FileManager |
+| OCP | Sistema extensible sin alterar código existente | Añadir formatos a Report |
+| LSP | Subclases compatibles con superclases | Reorganizar jerarquías de pájaros |
+| ISP | Evitar interfaces "hinchadas" | Dividir Worker en Workable/Eatable |
+| DIP | Acoplamiento a abstracciones | Inyectar Database en repositorio |
+
+
