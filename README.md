@@ -22,7 +22,7 @@
 
 ## Introducción a la Arquitectura de Software
 
-### ¿Qué es la arquitectura de software? 🎓
+### ¿Qué es la arquitectura de software? 
 
 La arquitectura de software se puede entender desde tres perspectivas fundamentales:
 
@@ -47,7 +47,7 @@ Determina aspectos cruciales como:
 - Patrones arquitectónicos a evitar
 - Decisiones tempranas de alto impacto
 
-### ¿Qué es el Desarrollo de software? 🛠️
+### ¿Qué es el Desarrollo de software? 
 
 #### Visión detallada
 Define la implementación específica de cada módulo o componente:
@@ -69,7 +69,7 @@ Se centra en aspectos como:
 - Claridad
 - Facilidad de mantenimiento
 
-### Arquitectura vs Desarrollo: Diferencias Clave 📊
+### Arquitectura vs Desarrollo: Diferencias Clave 
 
 | Aspecto              | Arquitectura                                        | Desarrollo 
 |----------------------|-----------------------------------------------------|--------------------------------------------------
@@ -82,7 +82,7 @@ Se centra en aspectos como:
 
 La arquitectura establece la estructura general y las decisiones de Desarrollo de sistemas completos, mientras que el Desarrollo detalla las piezas individuales, definiendo módulos concretos y el flujo interno para materializar la visión arquitectónica.
 
-### Roles y Responsabilidades 👤
+### Roles y Responsabilidades 
 
 #### Arquitecto de Software
 - Define la estructura general del sistema
@@ -103,9 +103,9 @@ La arquitectura establece la estructura general y las decisiones de Desarrollo d
 
 ![Arquitectura vs Desarrollo de Software](Assets/ArquitecturaDeSoftware1.png)
 
-## Principios SOLID 🔧
+## Principios SOLID 
 
-### Principio de Responsabilidad Única (SRP) 🧩
+### Principio de Responsabilidad Única (SRP) 
 
 **Definición**: Cada módulo o clase debe tener una única razón para cambiar.
 
@@ -150,7 +150,7 @@ class Compressor:
     def decompress(self, filename): pass
 ```
 
-### Principio Abierto-Cerrado (OCP) 🔓
+### Principio Abierto-Cerrado (OCP) 
 
 **Definición**: Los módulos deben estar abiertos a extensión, pero cerrados a modificación.
 
@@ -186,7 +186,7 @@ class XMLFormatter:
 # Extender: sólo creas nueva clase Formatter, no modifies Report
 ```
 
-## Principio de Sustitución de Liskov (LSP) 🔄
+## Principio de Sustitución de Liskov (LSP) 
 
 **Definición**: Los objetos de una clase derivada deben poder sustituir a la clase base sin cambiar el comportamiento.
 
@@ -217,7 +217,7 @@ class Sparrow(FlyingBird): pass
 class Penguin(Bird): pass
 ```
 
-## Principio de Segregación de Interfaces (ISP) 📋
+## Principio de Segregación de Interfaces (ISP) 
 
 **Definición**: Los clientes no deben depender de interfaces que no usan.
 
@@ -250,7 +250,7 @@ class Robot(Workable):
     def work(self): pass
 ```
 
-## Principio de Inversión de Dependencias (DIP) 🔄
+## Principio de Inversión de Dependencias (DIP) 
 
 **Definición**: Los módulos de alto nivel no deben depender de los de bajo nivel, ambos deben depender de abstracciones.
 
