@@ -4,22 +4,23 @@
 
 ## Índice 📑
 
-1. [Introducción a la Arquitectura de Software](#10-introduccion-a-la-arquitectura-de-software)
-   1.1 [¿Qué es la arquitectura de software?](#11-qué-es-la-arquitectura-de-software-)
-   1.2 [¿Qué es el Desarrollo de software?](#12-qué-es-el-desarrollo-de-software-)
-   1.3 [Arquitectura vs Desarrollo: Diferencias Clave](#13-arquitectura-vs-desarrollo-diferencias-clave-)
-   1.4 [Roles y Responsabilidades](#14-roles-y-responsabilidades-)
+1. [Introducción a la Arquitectura de Software](#1-introducción-a-la-arquitectura-de-software)
+   - [1.1 ¿Qué es la arquitectura de software?](#11-qué-es-la-arquitectura-de-software)
+   - [1.2 ¿Qué es el Desarrollo de software?](#12-qué-es-el-desarrollo-de-software)
+   - [1.3 Arquitectura vs Desarrollo: Diferencias Clave](#13-arquitectura-vs-desarrollo-diferencias-clave)
+   - [1.4 Roles y Responsabilidades](#14-roles-y-responsabilidades)
 
-2. [Principios SOLID](#20-principios-solid-)
-   2.1 [Principio de Responsabilidad Única (SRP)](#21-principio-de-responsabilidad-única-srp-)
-   2.2 [Principio Abierto-Cerrado (OCP)](#22-principio-abierto-cerrado-ocp-)
-   2.3 [Principio de Sustitución de Liskov (LSP)](#23-principio-de-sustitución-de-liskov-lsp-)
-   2.4 [Principio de Segregación de Interfaces (ISP)](#24-principio-de-segregación-de-interfaces-isp-)
-   2.5 [Principio de Inversión de Dependencias (DIP)](#25-principio-de-inversión-de-dependencias-dip-)
-   2.6 [Resumen de SOLID](#26-resumen-de-solid)
+2. [Principios SOLID](#2-principios-solid)
+   - [2.1 Principio de Responsabilidad Única (SRP)](#21-principio-de-responsabilidad-única-srp)
+   - [2.2 Principio Abierto-Cerrado (OCP)](#22-principio-abierto-cerrado-ocp)
+   - [2.3 Principio de Sustitución de Liskov (LSP)](#23-principio-de-sustitución-de-liskov-lsp)
+   - [2.4 Principio de Segregación de Interfaces (ISP)](#24-principio-de-segregación-de-interfaces-isp)
+   - [2.5 Principio de Inversión de Dependencias (DIP)](#25-principio-de-inversión-de-dependencias-dip)
+   - [2.6 Resumen de SOLID](#26-resumen-de-solid)
 
 ---
-# 1.0 Introduccion a la Arquitectura de Software
+
+# 1 Introducción a la Arquitectura de Software
 
 ## 1.1 ¿Qué es la arquitectura de software? 🎓
 
@@ -102,7 +103,7 @@ La arquitectura establece la estructura general y las decisiones de Desarrollo d
 
 ![Arquitectura vs Desarrollo de Software](Assets/ArquitecturaDeSoftware1.png)
 
-# 2.0 Principios SOLID 🔧
+# 2 Principios SOLID 🔧
 
 ## 2.1 Principio de Responsabilidad Única (SRP) 🧩
 
