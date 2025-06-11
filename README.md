@@ -91,4 +91,4 @@ La arquitectura establece la estructura general y las decisiones de Desarrollo d
 - Aplica patrones de Desarrollo (creacional, estructural, comportamental)
 - Se enfoca en la calidad del código
 
-![Arquitectura vs Desarrollo de Software](@Assets/Arquitectura de software1.png)
+![Arquitectura vs Desarrollo de Software](Assets/ArquitecturaDeSoftware1.png)
