@@ -420,6 +420,8 @@ Core mínimo con funcionalidades básicas, ampliable con plug-ins independientes
 - MVC → perfecto para aplicaciones orientadas a UI
 - Microkernel → cuando quieras flexibilidad máxima y extensibilidad
 
+![Comparativa Microservicios vs Serverless](Assets/ArquitecturaDeSoftware3.png)
+
 ## Estilos de despliegue
 
 ### Microservicios
@@ -495,4 +497,4 @@ Modelo donde ejecutas funciones en la nube sin gestionar servidores. Se activan 
 - Usa serverless si buscas rapidez, eficiencia de costos y cargas event-driven ligeras
 - En proyectos reales, es común combinar ambos: microservicios gestionan dominio central, mientras funcionalidades auxiliares usan serverless
 
-![Comparativa Microservicios vs Serverless](Assets/ArquitecturaDeSoftware3.png)
+![Comparativa Microservicios vs Serverless](Assets/ArquitecturaDeSoftware4.png)
