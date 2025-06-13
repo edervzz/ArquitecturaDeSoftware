@@ -318,6 +318,8 @@ class UserRepository:
 
 ## Estilos Arquitectónicos
 
+![Resumen estilos arquitectonicos](Assets/ArquitecturaDeSoftware3.png)
+
 ### Monolito
 
 #### Definición
@@ -419,8 +421,6 @@ Core mínimo con funcionalidades básicas, ampliable con plug-ins independientes
 - Cliente-Servidor / Multicapa → cuando hay lógica de negocio y UI diferenciada
 - MVC → perfecto para aplicaciones orientadas a UI
 - Microkernel → cuando quieras flexibilidad máxima y extensibilidad
-
-![Comparativa Microservicios vs Serverless](Assets/ArquitecturaDeSoftware3.png)
 
 ## Estilos de despliegue
 
