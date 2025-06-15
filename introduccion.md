@@ -1,10 +1,8 @@
-## Introducción a la Arquitectura de Software
+# Introducción a la Arquitectura de Software
 
-### ¿Qué es la arquitectura de software?
+## ¿Qué es la arquitectura de software?
 
-La arquitectura de software se puede entender desde tres perspectivas fundamentales:
-
-#### Visión de alto nivel
+### Visión de alto nivel
 
 Es el "esqueleto" o blueprint de un sistema. Define:
 
@@ -13,7 +11,7 @@ Es el "esqueleto" o blueprint de un sistema. Define:
 - Los entornos de ejecución
 - Cómo estos elementos se integran para satisfacer tanto requisitos funcionales como no funcionales (rendimiento, disponibilidad, seguridad)
 
-#### Gestión de la complejidad
+### Gestión de la complejidad
 
 Proporciona una abstracción para organizar sistemas de gran escala, equilibrando factores críticos como:
 
@@ -22,7 +20,7 @@ Proporciona una abstracción para organizar sistemas de gran escala, equilibrand
 - Escalabilidad
 - Costos operativos
 
-#### Decisiones estratégicas
+### Decisiones estratégicas
 
 Determina aspectos cruciales como:
 
@@ -31,9 +29,9 @@ Determina aspectos cruciales como:
 - Patrones arquitectónicos a evitar
 - Decisiones tempranas de alto impacto
 
-### ¿Qué es el Desarrollo de software?
+## ¿Qué es el Desarrollo de software?
 
-#### Visión detallada
+### Visión detallada
 
 Define la implementación específica de cada módulo o componente:
 
@@ -43,13 +41,13 @@ Define la implementación específica de cada módulo o componente:
 - APIs
 - Patrones de Desarrollo a nivel local
 
-#### Plan de implementación
+### Plan de implementación
 
 - Guía a los desarrolladores
 - Describe interfaces y relaciones
 - Define métodos para cumplir requisitos funcionales
 
-#### Enfoque práctico
+### Enfoque práctico
 
 Se centra en aspectos como:
 
@@ -69,13 +67,19 @@ Se centra en aspectos como:
 | Flexibilidad         | Rígido – cambios son costosos                       | Más fácil de cambiar y ajustar                    |
 | Ejemplos             | Microservicios, C4, MVC                             | Singleton, Strategy, Builder, etc.                |
 
-La arquitectura establece la estructura general y las decisiones de Desarrollo de sistemas completos, mientras que el Desarrollo detalla las piezas individuales, definiendo módulos concretos y el flujo interno para materializar la visión arquitectónica.
+La Arquitectura establece la estructura general y las decisiones de desarrollo de sistemas completos, mientras que el Desarrollo detalla las piezas individuales, definiendo módulos concretos y el flujo interno para materializar la visión arquitectónica.
 
-![Arquitectura vs Desarrollo de Software](Assets/ArquitecturaDeSoftware1.png)
+## Roles y responsabilidades. Arquitecto vs Desarrollador
 
-### Roles y Responsabilidades
+Un Desarrollador sabe lo que se puede hacer, conoce de tecnológia, la mejor forma de hacer software, usar librerias, BBDD, etc.
 
-#### Arquitecto de Software
+Un Arquitector sabe lo que se debe hacer, se asegura de que el diseño edl software implementa los requisitos del sistema, ademas un arquitecto:
+
+- Sabe programar, porque puede crear POCs, probar librerías, BBDD, etc.
+- Apoya al equipo de desarrollo, cuando estos necesitan ayuda
+- Gana el respeto, si los desarrolladores ven que resuelves problemas y los escuchas.
+
+### Arquitecto de Software
 
 - Define la estructura general del sistema
 - Selecciona tecnologías y patrones
@@ -85,7 +89,7 @@ La arquitectura establece la estructura general y las decisiones de Desarrollo d
 - Documenta decisiones arquitectónicas
 - Lidera visiones cross-equipo (Enterprise vs Solution Architect)
 
-#### Desarrollador de Software
+### Desarrollador de Software
 
 - Traduce la visión arquitectónica en componentes concretos
 - Define clases, interfaces y flujos
