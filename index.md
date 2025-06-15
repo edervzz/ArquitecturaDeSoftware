@@ -23,6 +23,11 @@
   - Extensibilidad
   - Testeabilidad
 
+- [Architecture Decision Records (ADRs)](adr.md)
+
+  - ¿Qué son los ADR?
+  - Los beneficios de documentar decisiones de arquitectura
+
 - [Principios SOLID](solid.md)
 
   - Principio de Responsabilidad Única (SRP)
