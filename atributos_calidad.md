@@ -20,4 +20,4 @@ Capacidad de gestionar la aplicación.
 
 Saber que esta pasando con la aplicación en un momento dado y tomar acciones para que mejore su funcionamiento.
 
-Mod
+// TODO

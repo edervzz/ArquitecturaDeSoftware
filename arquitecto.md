@@ -19,10 +19,10 @@ _Esta lista no tiene relación con patrones de arquitectura o plataformas, esto 
 
 ## Mindset: _Entender las necesidades del negocio_
 
+Hasta no entender los requerimientos, preocupaciones e intereses del usuario, podremos hablar de arquitectura y tecnológia. Por lo tanto, es importante tener en mente los siguientes puntos:
+
 - Siempre tratar de entender las partes internas del negocio
 - Que le quita el sueño al usuario
 - Puntos debiles y fuertes
 - Como afectamos al cliente de mi cliente
 - Que beneficios entregamos para el crecimiento y mejora
-
-_Hasta no entender los requerimientos, preocupaciones e intereses del usuario, podremos hablar de arquitectura y tecnológia._

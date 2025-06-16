@@ -1,31 +1,31 @@
-## Estilos Arquitectónicos
+# Estilos Arquitectónicos
 
 ![Resumen estilos arquitectonicos](Assets/ArquitecturaDeSoftware3.png)
 
-### Monolito
+## Monolito
 
-#### Definición
+### Definición
 
 Aplicación empaquetada como una sola unidad: UI, lógica de negocio y acceso a datos en el mismo deployment.
 
-#### Ventajas
+### Ventajas
 
 - Desarrollo y despliegue rápidos; un solo repositorio
 - Fácil compartir código (modelos, utilidades) internamente
 
-#### Desventajas
+### Desventajas
 
 - A medida que crece, mantenimiento y escalabilidad se complican
 - Un cambio puede impactar toda la app; difícil escalado
 
-#### Cuándo usarlo
+### Cuándo usarlo
 
 - MVP o proyectos pequeños
 - Equipos reducidos con necesidad de velocidad de desarrollo
 
-### Cliente-Servidor
+## Cliente-Servidor
 
-#### Definición
+### Definición
 
 Dos componentes críticos:
 
@@ -33,19 +33,19 @@ Dos componentes críticos:
 - Servidor: lógica y datos
 - Comunicación por petición/respuesta
 
-#### Ventajas
+### Ventajas
 
 - Separación clara de responsabilidades
 - Puede escalar el servidor
 
-#### Desventajas
+### Desventajas
 
 - La lógica de negocio queda centralizada; cliente está limitado
 - Las variantes de arquitectura (1-tier, 2-tier, n-tier) agregan complejidad
 
-### Multicapa (Layered / N-Tier)
+## Multicapa (Layered / N-Tier)
 
-#### Definición
+### Definición
 
 Descompone el sistema en capas:
 
@@ -54,62 +54,62 @@ Descompone el sistema en capas:
 - Acceso a datos
   Cada capa comunica solo con la adyacente.
 
-#### Ventajas
+### Ventajas
 
 - Buena separación de responsabilidades
 - Permite reemplazar capas independientemente
 
-#### Desventajas
+### Desventajas
 
 - Puede volverse lento por múltiples pasos
 - Riesgo de acoplamientos innecesarios
 
-#### Cuándo usarlo
+### Cuándo usarlo
 
 - Enterprise apps con lógica compleja
 
-### MVC (Model-View-Controller)
+## MVC (Model-View-Controller)
 
-#### Definición
+### Definición
 
 - Modelo: datos y lógica
 - Vista: UI
 - Controlador: conecta usuario y modelo
 
-#### Ventajas
+### Ventajas
 
 - Alto grado de desacoplamiento
 - Ideal para apps con múltiples canales de UI
 
-#### Desventajas
+### Desventajas
 
 - Puede ser complejo de implementar en sistemas no triviales
 
-#### Cuándo usarlo
+### Cuándo usarlo
 
 - Frameworks web/mobile (Django, Rails, ASP.NET)
 
-### Microkernel (Plug-in)
+## Microkernel (Plug-in)
 
-#### Definición
+### Definición
 
 Core mínimo con funcionalidades básicas, ampliable con plug-ins independientes.
 
-#### Ventajas
+### Ventajas
 
 - Extensible sin tocar el core
 - Aislamento: un plug-in falla, otros siguen operando
 
-#### Desventajas
+### Desventajas
 
 - Mayor sobrecarga y complejidad en gestión de plug-ins
 - Comunicación inter-módulos puede ser lenta
 
-#### Cuándo usarlo
+### Cuándo usarlo
 
 - IDEs (Eclipse), sistemas modulares, SOs, plataformas con extensiones
 
-### Comparativa de Estilos
+## Comparativa de Estilos
 
 | Estilo           | Ventajas principales                          | Desventajas principales                               | Caso de uso típico                        |
 | ---------------- | --------------------------------------------- | ----------------------------------------------------- | ----------------------------------------- |
@@ -119,7 +119,7 @@ Core mínimo con funcionalidades básicas, ampliable con plug-ins independientes
 | MVC              | Desacoplamiento UI-lógica-datos, reutilizable | Complejo al escalar                                   | Frameworks web, apps con múltiples vistas |
 | Microkernel      | Extensible, modular, aislable                 | Gestión de extensiones costosa, overhead              | IDEs, plataformas con plugins             |
 
-#### Conclusión de estilos arquitectonicos.
+## Conclusión de estilos arquitectonicos.
 
 - Monolito → para arrancar rápido
 - Cliente-Servidor / Multicapa → cuando hay lógica de negocio y UI diferenciada

@@ -1,6 +1,16 @@
-## Principios SOLID
+# Principios SOLID
 
-### Principio de Responsabilidad Única (SRP)
+Los principios SOLID son cinco principios de diseño de software que ayudan a crear código más flexible, mantenible y escalable. Fueron propuestos por Robert C. Martin y se basan en la programación orientada a objetos.
+
+| Principio                 | asdf                                                                           |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| Responsabilidad única     | Una clase debe tener una única responsabilidad o función                       |
+| Abierto-Cerrado           | Agregar nuevas funcionalidades sin modificar el código existente               |
+| Sustitución de Liskov     | Las clases derivadas deben comportarse de manera coherente con las clases base |
+| Segregación de Interfaces | Crear interfaces pequeñas o especificas                                        |
+| Inversión de Dependencias | Las clases deben depender de abstracciones, no de implementaciones concretas   |
+
+## Principio de Responsabilidad Única (SRP)
 
 **Definición**: Cada módulo o clase debe tener una única razón para cambiar.
 
@@ -47,7 +57,7 @@ class Compressor:
     def decompress(self, filename): pass
 ```
 
-### Principio Abierto-Cerrado (OCP)
+## Principio Abierto-Cerrado (OCP)
 
 **Definición**: Los módulos deben estar abiertos a extensión, pero cerrados a modificación.
 
@@ -204,5 +214,3 @@ class UserRepository:
 | LSP       | Subclases compatibles con superclases           | Reorganizar jerarquías de pájaros  |
 | ISP       | Evitar interfaces "hinchadas"                   | Dividir Worker en Workable/Eatable |
 | DIP       | Acoplamiento a abstracciones                    | Inyectar Database en repositorio   |
-
-![Resumen de SOLID](Assets/ArquitecturaDeSoftware2.png)

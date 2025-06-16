@@ -1,8 +1,9 @@
-# 🏗️ Arquitectura de Software
-
 ## Índice
 
 - [¿Que actividades realiza un Arquitecto de Software?](arquitecto.md)
+
+  - Misión de un Arquitecto
+  - Mindset
 
 - [Introducción a la Arquitectura de Software](introduccion.md)
 
@@ -13,7 +14,10 @@
 
 - [Proceso de Arquitectura](proceso_arquitectura.md)
 
----
+  - Entendimiento
+  - Mapeo de componentes
+  - Stack y diseño
+  - Documentación
 
 - [Atributos de calidad](atributos_calidad.md)
 
@@ -28,18 +32,17 @@
   - ¿Qué son los ADR?
   - Los beneficios de documentar decisiones de arquitectura
 
-- [Principios SOLID](solid.md)
+- [Principios SOLID](solid.md) | [Patrones de Diseño](https://refactoring.guru/es/design-patterns)
 
   - Principio de Responsabilidad Única (SRP)
   - Principio Abierto-Cerrado (OCP)
   - Principio de Sustitución de Liskov (LSP)
   - Principio de Segregación de Interfaces (ISP)
   - Principio de Inversión de Dependencias (DIP)
-  - Resumen de SOLID](#resumen-de-solid)
 
 - [Estilos Arquitectónicos](estilos_arquitectonicos.md)
 
-  - Monolito)
+  - Monolito
   - Cliente-Servidor
   - Multicapa
   - MVC
