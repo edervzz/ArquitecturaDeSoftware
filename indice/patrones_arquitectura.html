@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Patrones de Integración</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <h1 class="text-center">Patrones de Integración</h1>
+        <nav>
+            <div class="nav nav-pills justify-content-center" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-data-tab" data-bs-toggle="tab" data-bs-target="#nav-data"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Consistencia de
+                    Datos</button>
+                <button class="nav-link" id="nav-multistep-tab" data-bs-toggle="tab" data-bs-target="#nav-multistep"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Procesos
+                    Multi-Paso</button>
+                <button class="nav-link" id="nav-compose-tab" data-bs-toggle="tab" data-bs-target="#nav-compose"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Servicios
+                    Compuestos</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active text-center p-2" id="nav-data" role="tabpanel"
+                aria-labelledby="nav-data-tab" tabindex="0">
+                <div class="pb-2">
+                    Enfocado en asegurar que los datos de diferentes aplicaciones y repositorios de datos sea
+                    consistente.
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                aria-controls="flush-collapseOne">
+                                Retos
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h4>Inconsistencia Temporal</h4>
+                                <div>
+                                    Ocurre cuando los datos son actualizados en el sistema origen pero no se ha
+                                    propagado y sincronizado con todos los sistemas destino, resultando en
+                                    inconsistencia momentanea.
+                                    Se presenta como consecuencia o costo por mejorar la disponiblidad y rendimiento.
+                                    Los patrones de integración centrado en aplicación estan basado en APIs y pueden
+                                    ofrecer fuerte consistencia temporal de datos usando comunicación asincrona entre el
+                                    consumidor y proveedor. Patrones centrado en eventos pueden relajar el acoplamiento
+                                    entre los participantes pero incrementa la inconsistencia temporal mientras los
+                                    datos cambian y se propagan.
+                                </div>
+                                <br />
+                                <h4>Inconsistencia Estructural</h4>
+                                <div>
+                                    Ocurre cuando los datos son representados en diferentes formatos o esquemas. Aplica
+                                    para datos estructurados y no estructurados.
+
+                                    La inconsistencia estructural es en gran parte manejado por la capa de mapeo de
+                                    datos y la capa de transformación. Para abordar la inconsistencia semantica requiere
+                                    del uso de información como metadatos y el manejador maestro de datos, ademas suele
+                                    necesitar lógica de negocio adicional.
+                                </div>
+                                <br />
+                                <h4>Inconsistencia Semantica</h4>
+                                <div>
+                                    Ocurre cuando los sistemas involucrados interpretan el significado de los datos de
+                                    forma diferente.
+
+                                    Como se menciona en Inconsistencia Estructural, para evitar este escenario depende
+                                    del correcto mapeo y transformación de los datos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div><!-- tab-pane -->
+            <div class="tab-pane fade text-center p-2" id="nav-multistep" role="tabpanel"
+                aria-labelledby="nav-multistep-tab" tabindex="0">
+                <iframe src="../tabs/proceso_multistep.html" style="width:100%; height:400px; border:none;"></iframe>
+            </div>
+            <div class="tab-pane fade text-center p-2" id="nav-compose" role="tabpanel"
+                aria-labelledby="nav-compose-tab" tabindex="0">
+                <iframe src="../tabs/servicio_compuesto.html" style="width:100%; height:400px; border:none;"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

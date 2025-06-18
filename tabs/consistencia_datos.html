@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <div class="container text-center">
+
+        <div class="pb-2">
+            Enfocado en asegurar que los datos de diferentes aplicaciones y repositorios de datos sea consistencte. <a
+                class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                Retos
+            </a>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Retos
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h4>Inconsistencia Temporal</h4>
+                        <div>
+                            Ocurre cuando los datos son actualizados en el sistema origen pero no se ha propagado y
+                            sincronizado con
+                            todos los sistemas destino. Se presenta como consecuencia o costo por mejorar la
+                            disponiblidad y
+                            rendimiento. Los patrones de integración centrado en aplicación estan basado en APIs y
+                            pueden
+                            ofrecer
+                            fuerte consistencia temporal de datos usando comunicación asincrona entre el consumidor y
+                            proveedor.
+                            Patrones centrado en eventos pueden relaja el acoplamiento entre los participantes pero
+                            incrementa la
+                            inconsistencia temporal mientras los datos cambian y se propagan.
+                        </div>
+                        <br />
+                        <h4>Inconsistencia Estructural</h4>
+                        <div>
+                            Ocurre cuando los datos son representados en diferentes formatos o esquemas. Aplica para
+                            datos
+                            estructurados y no estructurados.
+                        </div>
+                        <br />
+                        <h4>Inconsistencia Semantica</h4>
+                        <div>
+                            Ocurre cuando los sistemas involucrados interpretan el significado de los datos de forma
+                            diferente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
